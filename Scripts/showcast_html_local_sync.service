@@ -1,0 +1,9 @@
+[Unit]
+Description=This service will synchronize the SHOWCast HTML folder with the public folder
+After=multi-user.target
+
+[Service]
+ExecStart=/home/geonetcast/Scripts/showcast_html_local_sync.sh
+
+[Install]
+WantedBy=default.target

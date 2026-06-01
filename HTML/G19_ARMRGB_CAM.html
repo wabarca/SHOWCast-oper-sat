@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G16 - Tormentas severas</title>
+  <link rel="stylesheet" href="styles/styles-player2.css">
+  <script src="scripts/scripts-player2.js" defer></script>
+</head>
+<body onload="initialize()">
+  <!-- Especificación de rutas de las imágenes -->
+  <div id="image-config"
+      data-images-path="Output//G19//ARMRGB_CAM//"
+      data-image-prefix="G19_ARMRGB_CAM_"
+      data-total-images="25"></div>
+
+  <!-- Controles de Animación -->
+  <aside class="controls">
+    <h1>GOES-19</h1>
+    <h2>Tormentas severas RGB</h2>
+    <button onclick="playAnimation()">Play</button>
+    <button onclick="stopAnimation()">Stop</button>
+    <button onclick="prevImage()">Prev</button>
+    <button onclick="nextImage()">Next</button>
+    <button onclick="changeSpeed(-50)">Speed +</button>
+    <button onclick="changeSpeed(50)">Speed -</button>
+  </aside>
+
+  <!-- Área de Visualización -->
+  <main>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <img id="mainImage" alt="Satellite image">
+    <span id="imageCounter"
+          style="position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;">
+      Imagen 1 de 25
+    </span>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=Autostart SHOWCast
+Comment=Autostart SHOWCast
+Exec=/home/geonetcast/Scripts/showcast_start.sh
+GenericName[en_US]=
+GenericName=
+Icon=/home/geonetcast/SHOWCast/HTML/favicon.ico
+MimeType=
+Name[en_US]=SHOWCast Launcher
+Name=SHOWCast Launcher
+Path=
+StartupNotify=true
+Terminal=true
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
